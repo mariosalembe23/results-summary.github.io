@@ -22,7 +22,7 @@
       >
         <div
           id="containerGrid"
-          class="grid grid-cols-8 max-w-xl w-full justify-center"
+          class="grid grid-cols-8 max-w-xl w-full justify-center rounded-3xl shadow-2xl shadow-blue-200"
         >
           <div
             class="col-span-4 card-results h-96 flex items-center justify-between flex-col rounded-3xl p-5"
@@ -34,9 +34,9 @@
               id="bolStatus"
               class="w-36 h-36 rounded-full flex items-center justify-center flex-col"
             >
-            <h2 class="text-5xl font-extrabold porcentValue">76</h2>
-            <small class="font-medium colorTextCustom">of 100</small>
-          </div>
+              <h2 class="text-5xl font-extrabold porcentValue">76</h2>
+              <small class="font-medium colorTextCustom">of 100</small>
+            </div>
             <div class="text-center p-4">
               <h4 class="font-semibold secondText text-2xl pb-2">Great</h4>
               <p class="textInfo font-medium">
@@ -45,7 +45,98 @@
               </p>
             </div>
           </div>
-          <div class="col-span-4 card-status h-80">oi</div>
+          <div
+            class="col-span-4 card-status h-80 p-5 flex flex-col justify-between"
+          >
+            <div>
+              <h3 class="textSummary font-semibold">Summary</h3>
+            </div>
+            <div class="w-full grid grid-cols-1 mt-5 gap-3">
+              <!-- REACTION CARD -->
+              <div
+                class="flex items-center justify-between bg-red-50 py-2.5 rounded-lg px-3"
+              >
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./assets/images/icon-reaction.svg"
+                    alt="icon-reaction"
+                  />
+                  <p class="textCategory font-semibold text-red-600">
+                    Reaction
+                  </p>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <small class="score font-bold">89</small>
+                  <small class="barra font-semibold">/</small>
+                  <small class="porcentFull font-semibold">100</small>
+                </div>
+              </div>
+              <!-- MEMORY CARD -->
+              <div
+                class="flex items-center justify-between bg-yellow-50 py-2.5 rounded-lg px-3"
+              >
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./assets/images/icon-memory.svg"
+                    alt="icon-reaction"
+                  />
+                  <p class="textCategory font-semibold text-yellow-500">
+                    Memory
+                  </p>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <small class="score font-bold">89</small>
+                  <small class="barra font-semibold">/</small>
+                  <small class="porcentFull font-semibold">100</small>
+                </div>
+              </div>
+              <!-- VERBAL CARD -->
+              <div
+                class="flex items-center justify-between bg-green-50 py-2.5 rounded-lg px-3"
+              >
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./assets/images/icon-verbal.svg"
+                    alt="icon-reaction"
+                  />
+                  <p class="textCategory font-semibold text-green-500">
+                    Verbal
+                  </p>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <small class="score font-bold">89</small>
+                  <small class="barra font-semibold">/</small>
+                  <small class="porcentFull font-semibold">100</small>
+                </div>
+              </div>
+              <!-- VISUAL CARD -->
+              <div
+                class="flex items-center justify-between bg-indigo-50 py-2.5 rounded-lg px-3"
+              >
+                <div class="flex items-center space-x-2">
+                  <img
+                    src="./assets/images/icon-visual.svg"
+                    alt="icon-reaction"
+                  />
+                  <p class="textCategory font-semibold text-indigo-600">
+                    Visual
+                  </p>
+                </div>
+                <div class="flex items-center space-x-1">
+                  <small class="score font-bold">89</small>
+                  <small class="barra font-semibold">/</small>
+                  <small class="porcentFull font-semibold">100</small>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 w-full">
+              <button
+                class="block font-semibold transition-all w-full py-3 rounded-full buttonContinue"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
